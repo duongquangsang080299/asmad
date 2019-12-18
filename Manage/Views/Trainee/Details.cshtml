@@ -1,0 +1,34 @@
+﻿@model Manage.Models.trainee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>trainee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TraineeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TraineeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.Account)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.Account)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TraineeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
